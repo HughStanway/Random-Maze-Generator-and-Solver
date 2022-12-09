@@ -1,0 +1,2 @@
+int genMaze();
+int testMaze();
