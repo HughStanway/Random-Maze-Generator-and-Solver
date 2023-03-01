@@ -18,7 +18,7 @@ MazeMain.c first calls testMaze until a working maze is generated, then the draw
 This loop makes use of the functions in MoveRobot.c to solve the maze using the left-turn rule. At any point in the maze the robot checks whether it can move left, doing so if it can, otherwise it will move forward. If the robot reaches a point where it cannot move left or forward it will check whether it can turn right since there might just be a right
 hand turn in the path. Finally, if it cannot do this, it must be at a dead-end and therefore it turns to comeback the way it came, while continuing to look for left turns before making any move. This while loop will continue until robot finds the finish line, then ending the programme.
 
-To compile the programme use the command: **gcc -o Maze MazeMain.c MoveRobot.c MazeGen.c graphics.c** then to run the programme use the command: ./Maze | java -jar drawapp-2.0.jar
+To compile the programme use the command: **gcc -o Maze MazeMain.c MoveRobot.c MazeGen.c graphics.c** then to run the programme use the command: **./Maze | java -jar drawapp-2.0.jar**
 
 <img width="1082" alt="image" src="https://user-images.githubusercontent.com/98408144/222125347-773a4a7e-1bf5-4296-b818-05000dd1e081.png">
 
